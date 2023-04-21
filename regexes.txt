@@ -1,0 +1,5 @@
+regexes
+const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+const user_reg = /^[A-z][A-z0-9-_]{5,22}$/;
+const email_reg = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,5}$/i;
+const mobile_reg = /^(09)\d{9}$/;

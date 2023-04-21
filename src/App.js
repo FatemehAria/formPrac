@@ -1,20 +1,21 @@
 import { Form, Formik } from "formik";
 import * as yup from "yup";
 import "./App.css";
+import { validationSch } from "./Schema";
 
 function App() {
   const submission = () => {
     console.log("Submitting");
   };
 
-  const validationSch = yup.object().shape({
-    username: yup
-      .string()
-      .min(3, "username must be atleast 3 characters")
-      .required("username is required"),
-    email: yup.string().email("invalid email").required("email is required"),
-    password: yup.number().required("password is required"),
-  });
+  // const validationSch = yup.object().shape({
+  //   username: yup
+  //     .string()
+  //     .min(3, "username must be atleast 3 characters")
+  //     .required("username is required"),
+  //   email: yup.string().email("invalid email").required("email is required"),
+  //   password: yup.number().required("password is required"),
+  // });
 
   return (
     <div className="App">
